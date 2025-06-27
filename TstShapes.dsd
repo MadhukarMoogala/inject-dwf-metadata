@@ -5,7 +5,7 @@ MinorVer=1
 [DWF6Sheet:TstShapes-Model]
 DWG=D:\Work\repo\inject-dwf-metadata\TstShapes.dwg
 Layout=Model
-Setup=
+Setup=DWFSetup
 OriginalSheetPath=D:\Work\repo\inject-dwf-metadata\TstShapes.dwg
 Has Plot Port=0
 Has3DDWF=0
@@ -32,9 +32,10 @@ PWD=
 MRU=1
 File0=D:\Work\repo\inject-dwf-metadata\
 [MRU Sheet List]
-MRU=2
+MRU=3
 File0=D:\Work\repo\inject-dwf-metadata\TestShapes.dsd
-File1=D:\Work\Cases\26523\26523.dsd
+File1=D:\Work\repo\inject-dwf-metadata\TstShapes.dsd
+File2=D:\Work\Cases\26523\26523.dsd
 [PdfOptions]
 IncludeHyperlinks=TRUE
 CreateBookmarks=TRUE

@@ -33,7 +33,6 @@ Open the `.vcxproj` file (or the `.sln` file if you've created one) in Visual St
 
 In **Property Manager** (or directly in the `.vcxproj` file), confirm that the following `Import` entries point to your local SDK path:
 
-
 ```
 <Import Project="D:\ArxSDKs\arx2026\inc\rxsdk_Debugcfg.props" />
 <Import Project="D:\ArxSDKs\arx2026\inc\arx.props" />
@@ -50,7 +49,6 @@ Ensure your project includes a source file (e.g., `main.cpp`) that contains:
 - All required includes (e.g., `aced.h`, `rxregsvc.h`).
 
 Here's an example of the minimal top of your `main.cpp`:
-
 
 ```
 #include "aced.h"
@@ -120,8 +118,10 @@ Open any `.dwg` file that contains entities and at least one layout with printab
    - Add your layout(s) if they are not already listed.
    - Set **Publish to:** `DWF`.
    - Click **Publish Options...**:
-     - Choose whether to publish to a single or multi-sheet DWF. Your UI reactor should trigger at this point.
+     - Ensure "Publish Background" is unchecked.
    - Click **Publish**.
+   
+   ![PublishOptions](publishoptions.png)
 
 ### What to Expect:
 
@@ -137,7 +137,12 @@ Open any `.dwg` file that contains entities and at least one layout with printab
 ## 📁 Inspect the DWF Output
 
 Use **Autodesk Design Review** or any DWF viewer to inspect the generated DWF file. Verify:
+![DWFMetadata](DWFMetadtaProps.png)
 
-- The presence and correctness of **Metadata tags**.
-- The **Page resource** (`Help.html`) is properly attached.
-- **Node-level associations** (e.g., entity handles).
+
+
+## Written
+
+Madhukar Moogala
+
+APS Developer Advocate
